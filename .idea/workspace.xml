@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fadbfcf-0186-402b-9060-fbb8afa07339" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webtools.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webtools.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main_pro/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redeme.MD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_pro/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_pro/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_pro/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_pro/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/welcome.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/js/vector.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/vector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webtools/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/webtools/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webtools/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/webtools/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -46,6 +51,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/css" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\pythonProjects\webtools\static" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\pythonProjects\webtools\templates\css" />
+      <recent name="E:\pythonProjects\webtools\templates\js" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="webtools" type="Python.DjangoServer" factoryName="Django server">
@@ -85,8 +99,16 @@
       <updated>1593184104076</updated>
       <workItem from="1593184139941" duration="1331000" />
       <workItem from="1593221296937" duration="59000" />
-      <workItem from="1593221395286" duration="5545000" />
+      <workItem from="1593221395286" duration="9690000" />
     </task>
+    <task id="LOCAL-00001" summary="登录界面">
+      <created>1593253482770</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1593253482770</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,28 +116,34 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="登录界面" />
+    <option name="LAST_COMMIT_MESSAGE" value="登录界面" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="572" y="117" key="CommitChangelistDialog2" timestamp="1593253481448">
+    <state x="572" y="117" key="CommitChangelistDialog2" timestamp="1593269864402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="572" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1593253481448" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1593184712174">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="572" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1593269864402" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1593269762121">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593184712174" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1593184712174">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593269762121" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1593269762121">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593184712174" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1593184712174">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593269762121" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1593269762121">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593184712174" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1593184712174">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593269762121" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1593269762121">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593184712174" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593269762121" />
     <state x="463" y="164" key="SettingsEditor" timestamp="1593228981702">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -128,5 +156,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="564" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1593186631449" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1593269749074">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593269749074" />
   </component>
 </project>
