@@ -20,5 +20,7 @@ from main_pro import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("",views.printer),
-    path("login",views.login)
+    path("login",views.login),
+    path("resgister",views.resgister),
+    path("person",views.person),
 ]
