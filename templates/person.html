@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>person</title>
+    <script src="../static/js/vue.js"></script>
+</head>
+<body style="background-image: url('/static/images/bg1.jpg');background-size:100%">
+<div style="background-color: #ff0000" id="app">{% verbatim %} {{ message }} {% endverbatim %} </div>
+</body>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            message:"{{ user_name }}"
+        }
+    })
+</script>
+</html>

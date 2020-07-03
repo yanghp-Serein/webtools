@@ -17,17 +17,24 @@
 <div id="container">
 	<div id="output">
 		<div class="containerT">
-			<h1>用户登录</h1>
-			<form class="form" id="entry_form" action="login">
+			<h1 id="h1_sign">用户登录</h1>
+			<form class="form" id="entry_form" action="">
+                {% csrf_token %}
 				<input type="text" placeholder="用户名" name="entry_name" id="entry_name" value="admin">
 				<input type="password" placeholder="密码" name="entry_pwd" id="entry_password">
-				<button type="submit" id="entry_btn">登录</button>
+				<button type="submit" id="entry_btn" style="width: 90px">登录</button>
+                <button type="button" id="resgister_btn" onclick="resgister()"style="width: 90px">注册</button>
+                <button type="submit" id="confirm_btn" style="display: none">确认</button>
 				<div id="prompt" class="prompt"></div>
 			</form>
 		</div>
 	</div>
 </div>
 
+
+<div style="text-align:center;">
+</div>
+</body>
 <script type="text/javascript">
     $(function(){
         Victor("container", "output");   //登录背景函数
@@ -38,8 +45,43 @@
             }
         });
     });
+    //点击登录实现页面的跳转
+    $("#entry_btn").click(function () {
+        $.ajax({
+            method: 'POST',
+            url: "login",
+            dataType:"json",
+            data: $("#entry_form").serialize(),
+            success: function (res) {
+                console.log(res);
+                if (res.status == 1){
+                    window.location.href="person"
+                }else {
+                    alert(res.title)
+                }
+            }
+        })
+    });
+
+    //点击注册转向注册内容
+    function resgister() {
+        $("#h1_sign").text("用户注册");
+        $("#confirm_btn").text("确认");
+        $("#resgister_btn").css("display","none");
+        $("#confirm_btn").removeAttr("style");
+        $("#entry_btn").css("display","none");
+    }
+    //点击确定提交账号和注册信息
+    $("#confirm_btn").click(function(){
+        $.ajax({
+            method:'GET',
+            url: "resgister",
+            data: $("#entry_form").serialize(),
+            success: function (res) {
+                alert(res);
+            }
+        })
+
+    })
 </script>
-<div style="text-align:center;">
-</div>
-</body>
 </html>
