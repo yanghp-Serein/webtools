@@ -41,7 +41,6 @@
     </div>
 </div>
 
-
 <div style="text-align:center;">
 </div>
 </body>
@@ -107,10 +106,10 @@
         }) // 这里面的url就是设置了路径
         //点击注册按钮页面改变为注册
         function resgister() {
-            $("#h1_tun").text("用户注册")
-            $("#entry_btn").css("display", "none")
-            $("#entry_register").css("display", "none")
-            $("#register_operate").removeAttr("style")
+            $("#h1_tun").text("用户注册"),
+            $("#entry_btn").css("display", "none"),
+            $("#entry_register").css("display", "none"),
+            $("#register_operate").removeAttr("style"),
             $("#register_operate").css("width", "200px")
         }
     }
@@ -119,10 +118,8 @@
             $.ajax({
                 method: 'GET',
                 url: "resgister",
-                data:"",
-            $("#entry_form").serialize(),
-                success:
-                    function (res) {
+                data: $("#entry_form").serialize(),
+                success:function (res) {
                 alert(res);
             }
             })
