@@ -35,8 +35,6 @@ def login(request):
     results = json.dumps(result)
     print("result", results, type(results))
     return HttpResponse(results)
-
-
 # 点击确定实现数据提交 将用户和密码存入数据库中
     return HttpResponse("error,用户不存在")
 
