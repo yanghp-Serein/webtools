@@ -22,5 +22,9 @@ urlpatterns = [
     path("",views.printer),
     path("login",views.login),
     path("resgister",views.resgister),
+<<<<<<< HEAD
     path("person",views.person)
+=======
+    path("person",views.person),
+>>>>>>> e66434ed5d164f8679c446f748298770688574d2
 ]
