@@ -6,13 +6,10 @@ import json
 
 # Create your views here.
 def printer(request):
-<<<<<<< HEAD
     # u = user_information.objects.all()
     # print(u)
-=======
     data=user_information.objects.all()
     print(data)
->>>>>>> e66434ed5d164f8679c446f748298770688574d2
     return render(request, "login.html")
 
 
@@ -20,11 +17,8 @@ def login(request):
     data = request.POST
     user_name = data["entry_name"]
     user_pwd = data["entry_pwd"]
-<<<<<<< HEAD
     result = {}
-=======
     print(data)
->>>>>>> e66434ed5d164f8679c446f748298770688574d2
     try:
         user = user_information.objects.get(name=user_name)
         print(user.password)
@@ -35,7 +29,6 @@ def login(request):
             result["status"] = 0
             result["title"] = "error"
     except:
-<<<<<<< HEAD
         result["status"] = 2
         result["title"] = "error"
     print(result)
@@ -45,17 +38,14 @@ def login(request):
 
 
 # 点击确定实现数据提交 将用户和密码存入数据库中
-=======
-        return HttpResponse("error,用户不存在")
+    return HttpResponse("error,用户不存在")
 
 #注册用户
->>>>>>> e66434ed5d164f8679c446f748298770688574d2
 def resgister(request):
     data = request.GET
     user_name = data["entry_name"]
     user_pwd = data["entry_pwd"]
     print(data)
-<<<<<<< HEAD
     try:
         user = user_information.objects.get(name=user_name)
         if user_name == user.name:
@@ -70,7 +60,6 @@ def person(request):
     data = request.GET
     user_name = data["entry_name"]
     return render(request, "person.html",user_name)
-=======
     # u = user_information.objects.all()
     #     # print("f", u)
     try:
@@ -86,4 +75,3 @@ def person(request):
     # user_name = data["entry_name"]
     return render(request,"person.html")
 
->>>>>>> e66434ed5d164f8679c446f748298770688574d2
